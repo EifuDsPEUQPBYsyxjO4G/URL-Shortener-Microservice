@@ -1,0 +1,27 @@
+{
+  "name": "URL-Shortener-Microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EifuDsPEUQPBYsyxjO4G/URL-Shortener-Microservice.git"
+  },
+  "keywords": [],
+  "author": "Liam Cottam <killtheidols@hotmail.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EifuDsPEUQPBYsyxjO4G/URL-Shortener-Microservice/issues"
+  },
+  "homepage": "https://github.com/EifuDsPEUQPBYsyxjO4G/URL-Shortener-Microservice#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "nedb": "^1.8.0",
+    "pug": "^2.0.0-rc.2",
+    "valid-url": "^1.0.9"
+  }
+}

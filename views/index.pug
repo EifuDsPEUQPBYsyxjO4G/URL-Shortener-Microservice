@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    div(class='container')
+        h1(class='header')=title
+        blockquote
+            p User Stories:
+            ol
+                li I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+                li When I visit that shortened URL, it will redirect me to my original link.
+
+        h3 Example creation usage:
+        div(class='well well-sm') #{url}/new/https://www.google.com
+        div(class='well well-sm') #{url}/new/http://foo.com:80
+
+        h3 Example creation output:
+        div(class='well well-sm') { "original_url":"http://foo.com:80", "short_url":"#{url}/8170" }
+
+        h3 Usage:
+        div(class='well well-sm') #{url}/2871
+
+        h3 Will redirect to:
+        div(class='well well-sm') https://www.google.com/
